@@ -2,7 +2,10 @@
 
 Este proyecto permite consumir la Api de Marvel https://developer.marvel.com/ usando Angular versión 15.0.5.
 
-Nos permite ver ...
+Nos permite ver información detallada de los personajes de los comics, los comics, las series, los eventos.
+
+Tomado de : https://codeomelet.com/posts/ngmarvel-app-using-angular-and-marvel-api#1-get-image
+
 
 ## App
 
