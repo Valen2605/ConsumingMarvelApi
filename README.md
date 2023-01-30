@@ -1,27 +1,100 @@
-# NgMarvelApp
+# Consumiendo Api de Marvel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+Este proyecto permite consumir la Api de Marvel https://developer.marvel.com/ usando Angular versión 15.0.5.
 
-## Development server
+Nos permite ver ...
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## App
 
-## Code scaffolding
+### Componentes 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* about
+* characters
+* comics
+* events
+* partials
+* series
+* stories
 
-## Build
+#### Componente about
+```
+Muestra una breve descripción de la api y con que se consume
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Componente characters
+```
+Muestra una lista e imagenes de personajes con su descripción, comics, series, historietas a las que pertenecen
+```
 
-## Running unit tests
+#### Componente comics
+```
+Muestra información e imágenes de los diferentes comics con su respectiva descripción
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Componente serie
+```
+Muestra información e imágenes de las diferentes series con su respectiva descripción
+```
+#### Componente stories
+```
+Muestra información e imágenes de las diferentes historias con su respectiva descripción
+```
 
-## Running end-to-end tests
+#### Módulo partials
+```
+Contiene componentes para el manejo de información del banner, encabezado, pie de página,
+lista, grupo de listas, buscador y demás funciones para poder mostrar información en la página.
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Modelos
 
-## Further help
+* image.model.ts
+* request.model.ts
+* response.model.ts
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Modelo image
+```
+contiene los tipos de imágenes de la API de Marvel
+```
+
+#### Modelo request
+```
+contiene los tipos de parámetros de solicitud de la API de Marvel.
+```
+
+#### Modelo Response
+```
+contiene la respuesta de la API de Marvel, los datos y los tipos de caché.
+```
+
+### Servicios
+
+* marvel.service.ts
+
+```
+Permite formar una URL de imagen usando la miniatura de la imagen y la variante.
+Obtiene los datos de la entidad en función de la categoría y las opciones
+```
+
+### Environments
+
+* environment.ts
+```
+Permite definir las variables de entorno 
+```
+
+
+### Servidor 
+
+Ejecutar ng serve -o para servidor local. Navegar a http://localhost:4200/characters
+
+## Construido con 🛠️
+
+* [Angular](https://angular.io/) - El framework web usado
+* [Bootstrap 5](https://getbootstrap.com/) - Para los estilos de la página
+
+
+## Autor ✒️
+
+* **Valentina Santa Muñoz** - (https://github.com/Valen2605)
+
